@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Gallery</title>
+<meta name="description" content="Browse our 3D designs for art and furniture.">
+<link rel="stylesheet" href="css/style.css">
+<script src="lib/model-viewer.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+  <div class="logo" id="logo"></div>
+  <a class="cta" id="topcta" href="#">Enquire</a>
+</div></header>
+
+<main class="wrap">
+  <section class="hero"><h1 id="tagline"></h1><p id="intro"></p></section>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+</main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<div class="modal" id="modal" aria-modal="true" role="dialog">
+  <div class="sheet">
+    <div class="stage">
+      <button class="close" id="close" aria-label="Close">×</button>
+      <button class="nav prev" id="prev" aria-label="Previous">‹</button>
+      <button class="nav next" id="next" aria-label="Next">›</button>
+      <model-viewer id="bigmv" camera-controls touch-action="pan-y" auto-rotate
+        environment-image="neutral" exposure="1" shadow-intensity="1" shadow-softness="1"
+        interaction-prompt="none" min-camera-orbit="auto auto 20%" max-camera-orbit="auto auto 300%"></model-viewer>
+      <div class="tools">
+        <button id="t-rot" class="on">Rotate</button>
+        <button id="t-light">Brighter</button>
+        <button id="t-reset">Reset</button>
+      </div>
+    </div>
+    <div class="info">
+      <div class="cat" id="m-cat"></div>
+      <h2 id="m-title"></h2>
+      <p id="m-desc"></p>
+      <dl id="m-dl"></dl>
+      <a class="enq" id="m-enq" href="#" target="_blank" rel="noopener">Enquire about this piece</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/models.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
