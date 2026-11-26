@@ -10,7 +10,7 @@ window.SITE = {
 };
 
 /* Max 12 items are shown. Put .glb files in /models and list them here.
-   category: "Art" or "Furniture" (any text works; filters are built automatically) */
+   File names are CASE-SENSITIVE on GitHub Pages (CHAIR.glb is not chair.glb). */
 window.MODELS = [
   {
     title: "LAZZY CHAIR",
@@ -21,12 +21,12 @@ window.MODELS = [
     materials: "Oak, boucle"
   },
   {
-    title: "Sample Sculpture",
-    category: "Art",
-    file: "models/sculpture.glb",
-    description: "Abstract sculpture, cast resin with matte finish.",
-    dimensions: "W 30 × D 30 × H 60 cm",
-    materials: "Resin"
+    title: "DINING TABLE",
+    category: "Furniture",
+    file: "models/DINING%20TABLE.glb",   // tip: rename file to DINING-TABLE.glb and use models/DINING-TABLE.glb
+    description: "Dining table. Edit this description.",
+    dimensions: "W 200 × D 90 × H 75 cm",
+    materials: "Edit materials"
   }
   // copy a block above for each new piece (add a comma between blocks)
 ];
