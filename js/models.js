@@ -13,9 +13,9 @@ window.SITE = {
    category: "Art" or "Furniture" (any text works; filters are built automatically) */
 window.MODELS = [
   {
-    title: "Sample Chair",
+    title: "LAZZY CHAIR",
     category: "Furniture",
-    file: "models/chair.glb",
+    file: "models/CHAIR.glb",
     description: "Lounge chair with solid oak frame and boucle seat.",
     dimensions: "W 70 × D 72 × H 80 cm",
     materials: "Oak, boucle"
